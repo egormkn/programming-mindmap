@@ -1,0 +1,241 @@
+digraph Programming {
+    
+    graph [layout="twopi" splines="curved" root="root" ranksep="5 3 1" overlap="false"];
+    node [shape="plain"];
+    edge [color="#2b78e4"];
+
+    /* Root */
+    
+    root [shape="circle" label="Programming"];
+    
+    /* Languages */
+    
+    cpp [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">C++</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    java [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Java</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    python [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Python</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    javascript [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Javascript</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    kotlin [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Kotlin</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    rust [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Rust</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    haskell [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Haskell</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    csharp [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">C#</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    php [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">PHP</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    swift [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Swift</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    go [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Go</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    r [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">R</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    julia [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Julia</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    scala [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Scala</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    clojure [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Clojure</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    ocaml [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">OCaml</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    /* Platforms and frameworks */
+
+    qt [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Qt</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+
+    boost [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">boost</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+
+    unreal [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Unreal Engine</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+
+    spring [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Spring</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+
+    javafx [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">JavaFX</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+
+    angular [href="https://angular.io" tooltip="Angular" label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Angular</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+
+    react [href="https://reactjs.org" tooltip="React" label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">React</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+
+    vue [href="https://vuejs.org" tooltip="Vue" label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Vue</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+
+    express [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Express</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+
+    nestjs [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">NestJS</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+
+    electron [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Electron</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+
+    django [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Django</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+
+    keras [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Keras</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+
+    tensorflow [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Tensorflow</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+
+    android [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Android</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    /* Connections */
+    
+    root -> {cpp java python javascript kotlin rust haskell csharp php swift go r julia scala clojure ocaml};
+
+    cpp -> {qt boost unreal};
+    java -> {spring javafx};
+    javascript -> {angular react vue express nestjs electron};
+    python -> {django keras tensorflow};
+    kotlin -> {android};
+}
