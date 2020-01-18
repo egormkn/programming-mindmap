@@ -1,89 +1,99 @@
 digraph Programming {
     
-    graph [layout="twopi" splines="curved" root="root" ranksep="5 3 1" overlap="false"];
-    node [shape="plain"];
-    edge [color="#2b78e4"];
+    graph [
+        layout="circo" 
+        splines="curved" 
+        root="root"
+        mindist="0.5"
+        //ranksep="10 5" // for twopi layout
+        overlap="false"
+    ];
+    
+    node [
+        shape="plain" 
+        margin="0"
+    ];
 
     /* Root */
     
-    root [shape="circle" label="Programming"];
+    root [shape="circle" fontsize="30" label="Programming"];
     
     /* Languages */
     
-    cpp [label=<
+    cpp [href="https://isocpp.org/" tooltip="C++" label=<
         <table border="0" cellborder="1" cellspacing="0">
             <tr><td bgcolor="yellow">C++</td></tr>
-            <tr><td bgcolor="white">Description</td></tr>
+            <tr><td bgcolor="white" balign="left"><font point-size="10">General-purpose language, well-suited for<br/>system programming, embedded systems,<br/>desktop applications and computer graphics.</font></td></tr>
         </table>
     >];
     
-    java [label=<
+    java [href="https://developer.oracle.com/java/" tooltip="Java" label=<
         <table border="0" cellborder="1" cellspacing="0">
             <tr><td bgcolor="yellow">Java</td></tr>
-            <tr><td bgcolor="white">Description</td></tr>
+            <tr><td bgcolor="white" balign="left"><font point-size="10">Language for cross-platform development,<br/>popular for client-server web applications.</font></td></tr>
         </table>
     >];
     
-    python [label=<
+    python [href="https://www.python.org/" tooltip="Python" label=<
         <table border="0" cellborder="1" cellspacing="0">
             <tr><td bgcolor="yellow">Python</td></tr>
-            <tr><td bgcolor="white">Description</td></tr>
+            <tr><td bgcolor="white" balign="left"><font point-size="10">Interpreted language used for<br/>web applications, scientific computing,<br/>machine learning and data science.</font></td></tr>
         </table>
     >];
     
-    javascript [label=<
+    javascript [href="https://wikipedia.org/wiki/JavaScript" tooltip="JavaScript" label=<
         <table border="0" cellborder="1" cellspacing="0">
-            <tr><td bgcolor="yellow">Javascript</td></tr>
-            <tr><td bgcolor="white">Description</td></tr>
+            <tr><td bgcolor="yellow">JavaScript</td></tr>
+            <tr><td bgcolor="white" balign="left"><font point-size="10">Interpreted language used for<br/>frontend and backend development,<br/>desktop and mobile applications.</font></td></tr>
         </table>
     >];
     
-    kotlin [label=<
+    kotlin [href="https://kotlinlang.org/" tooltip="Kotlin" label=<
         <table border="0" cellborder="1" cellspacing="0">
             <tr><td bgcolor="yellow">Kotlin</td></tr>
-            <tr><td bgcolor="white">Description</td></tr>
+            <tr><td bgcolor="white" balign="left"><font point-size="10">Cross-platform language designed<br/>to interoperate fully with Java, used for<br/>client-server and mobile applications.</font></td></tr>
         </table>
     >];
     
-    rust [label=<
-        <table border="0" cellborder="1" cellspacing="0">
-            <tr><td bgcolor="yellow">Rust</td></tr>
-            <tr><td bgcolor="white">Description</td></tr>
-        </table>
-    >];
-    
-    haskell [label=<
-        <table border="0" cellborder="1" cellspacing="0">
-            <tr><td bgcolor="yellow">Haskell</td></tr>
-            <tr><td bgcolor="white">Description</td></tr>
-        </table>
-    >];
-    
-    csharp [label=<
+    csharp [href="https://docs.microsoft.com/dotnet/csharp/" tooltip="C#" label=<
         <table border="0" cellborder="1" cellspacing="0">
             <tr><td bgcolor="yellow">C#</td></tr>
-            <tr><td bgcolor="white">Description</td></tr>
+            <tr><td bgcolor="white" balign="left"><font point-size="10">General-purpose language<br/>suitable for web, desktop<br/>and mobile development.</font></td></tr>
         </table>
     >];
     
-    php [label=<
+    rust [href="https://www.rust-lang.org/" tooltip="Rust" label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Rust</td></tr>
+            <tr><td bgcolor="white" balign="left"><font point-size="10">Language that is focused on safety and<br/>performance, used for desktop and server<br/>applications and embedded systems.</font></td></tr>
+        </table>
+    >];
+    
+    haskell [href="https://www.haskell.org/" tooltip="Haskell" label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Haskell</td></tr>
+            <tr><td bgcolor="white" balign="left"><font point-size="10">Purely functional programming<br/>language suitable for teaching,<br/>research and industrial application,<br/>mostly network and web software.</font></td></tr>
+        </table>
+    >];
+    
+    php [href="https://www.php.net/" tooltip="PHP" label=<
         <table border="0" cellborder="1" cellspacing="0">
             <tr><td bgcolor="yellow">PHP</td></tr>
-            <tr><td bgcolor="white">Description</td></tr>
+            <tr><td bgcolor="white" balign="left"><font point-size="10">Interpreted programming<br/>language originally designed<br/>for web development.</font></td></tr>
         </table>
     >];
     
-    swift [label=<
+    swift [href="https://swift.org/" tooltip="Swift" label=<
         <table border="0" cellborder="1" cellspacing="0">
             <tr><td bgcolor="yellow">Swift</td></tr>
-            <tr><td bgcolor="white">Description</td></tr>
+            <tr><td bgcolor="white" balign="left"><font point-size="10">General-purpose compiled<br/>language for desktop and<br/>mobile development for<br/>Apple devices (iOS, macOS).</font></td></tr>
         </table>
     >];
     
-    go [label=<
+    go [href="https://golang.org/" tooltip="Go" label=<
         <table border="0" cellborder="1" cellspacing="0">
             <tr><td bgcolor="yellow">Go</td></tr>
-            <tr><td bgcolor="white">Description</td></tr>
+            <tr><td bgcolor="white" balign="left"><font point-size="10">General-purpose compiled<br/>language focused on safety<br/>and concurrency, used for<br/>network and system<br/>applications.</font></td></tr>
         </table>
     >];
     
@@ -118,6 +128,13 @@ digraph Programming {
     ocaml [label=<
         <table border="0" cellborder="1" cellspacing="0">
             <tr><td bgcolor="yellow">OCaml</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+    
+    ruby [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Ruby</td></tr>
             <tr><td bgcolor="white">Description</td></tr>
         </table>
     >];
@@ -228,14 +245,50 @@ digraph Programming {
             <tr><td bgcolor="white">Description</td></tr>
         </table>
     >];
+
+    xamarin [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Xamarin</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+
+    laravel [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">Laravel</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
+
+    ios [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td bgcolor="yellow">iOS</td></tr>
+            <tr><td bgcolor="white">Description</td></tr>
+        </table>
+    >];
     
-    /* Connections */
-    
-    root -> {cpp java python javascript kotlin rust haskell csharp php swift go r julia scala clojure ocaml};
+    /* Edges */
+
+    edge [
+        color="#2b78e4"
+        penwidth="3.0"
+    ];
+
+    root -> {cpp java python javascript kotlin rust haskell csharp php swift go r julia scala clojure ocaml ruby};
+
+    edge [
+        color="#000000"
+        penwidth="3.0"
+        arrowhead="none"
+        arrowtail="none"
+    ];
 
     cpp -> {qt boost unreal};
     java -> {spring javafx};
     javascript -> {angular react vue express nestjs electron};
     python -> {django keras tensorflow};
     kotlin -> {android};
+    csharp -> {xamarin};
+    php -> {laravel};
+    swift -> {ios};
 }
